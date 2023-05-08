@@ -1,0 +1,26 @@
+:root {
+    /* Colors */
+    --background: #F9F2F2;
+    --black: #000;
+    --white: #fff;
+    --purple: #9b51e0;  
+    --brown: #685636;
+    --gray: #686868;
+}
+
+/* ---------- Normalizing ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    margin-top: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.98598rem;
+}
