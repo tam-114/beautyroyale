@@ -54,7 +54,7 @@
         <section class="mt-5 mb-5">
             <article>
                 <div class="d-flex row justify-content-center align-items-start text-start flex-lg-row flex-column">
-                    <div class="col-lg-4 col-12 d-flex justify-content-center align-items-start text-start flex-column">
+                    <div class="col-lg-4 col-12 d-flex justify-content-center align-items-start text-start flex-column ps-lg-5">
                         <h4 class="bell-font">our mission</h4>
                         <h1 class="urban-font fw-bold">Welcome to Beauty Royale</h1>
                         <br>
@@ -64,12 +64,12 @@
                         <br>
                         <p class="mont-font">We take great measures to ensure our clients walk out with a smile--happy and satisfied.</p>
                     </div>
-                    <div class="col-lg-7 col-12 d-flex pt-md-5 flex-row">
-                        <div class="col-lg-6 pt-lg-5 ps-lg-5 d-flex justify-content-center align-items-center flex-column">
+                    <div class="col-lg-8 col-12 d-flex pt-md-5 flex-row">
+                        <div class="col-lg-6 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
                             <img src="/images/pexels-photo-1126727.jpeg" alt="Photo by Jennifer Enujiugha on Pexels.com" class="img-fluid mt-lg-5 w-75">
                             <p class="fw-light img-credit pt-1 text-center">Credit: Jennifer Enujiugha (Pexels)</p>
                         </div>
-                        <div class="col-lg-6 pe-lg-5 d-flex justify-content-center align-items-center flex-column">
+                        <div class="col-lg-6 pe-lg-4 d-flex justify-content-start align-items-center flex-column">
                             <img src="/images/pexels-photo-6759836.jpeg" alt="Photo by Jennifer Enujiugha on Pexels.com" class="img-fluid w-75">
                             <p class="fw-light img-credit pt-1 text-center">Credit: Thuanny Gantuss (Pexels)</p>
                         </div>
@@ -80,11 +80,14 @@
         </section>
         <!-- ADD ROW CLASS -->
         <section class="discover-bg mb-5">
-            <div class="d-flex container-fluid justify-content-center align-items-end flex-column color-white h-100 ">
+            <div class="d-flex row container-fluid justify-content-center align-items-end flex-column color-white h-100 ">
                 <div class="col-lg-6 col-12 d-flex justify-content-center flex-column transform-x50-lg ps-md-3 ps-2 w-70 text-center">
                     <h1 class="urban-font title-size">Discover Our Video Games</h1>
                     <p class="mont-font pt-3 pb-3 pe-2 text-wrap">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
-                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center">View Our Games</button>
+                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
+                    <div id="noGamesMsg">
+                        <span class="noGamesBg">I don't have any games yet, sorry );</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,6 +104,8 @@
 ----- Call for a free 15-minute consultation to discuss your hair needs or answers to your questions! Video calling now available. -->
         <section></section>
 
+        <!-- Meet Our Team GURUS -->
+        <section></section>
         <!-- Contact -->
         <!-- Add styling in css, KEEP VALUES -->
         <section>
@@ -115,28 +120,28 @@
                     
                 </div>
             
-            <div class="form container d-flex col-lg-6 flex-column">     
-                <form id="contact-form" onsubmit="revealMessage()">
-                    <input type="hidden" name="contact_number">
-                    <div class="input-group">
-                        <label>Name</label>
-                        <input type="text" name="user_name" class="form-control">
-                    </div>
-                    <div class="input-group">
-                        <label>Email</label>
-                        <input type="email" name="user_email" class="form-control">
-                    </div>
-                    <div class="input-group">
-                        <label>Message</label>
-                        <textarea name="message" class="form-control"></textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
-                <div id="hiddenMessage" class="d-flex justify-content-center align-items-end offset-md-6 col-lg-6 col-12">
-                    <h2  style="display: none" class="text-center bell-font">Thank you for messaging us! We will contact you shortly.</h2>
+                <div class="form container d-flex col-lg-6 flex-column">     
+                    <form id="contact-form" onsubmit="revealMessage()">
+                        <input type="hidden" name="contact_number">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" name="user_name" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" name="user_email" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea name="message" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
+            </div>
+            <div id="hiddenMessage" class="d-flex justify-content-center align-items-end offset-md-6 col-lg-6 col-12">
+                <h2  style="display: none" class="text-center bell-font">Thank you for messaging us! We will contact you shortly.</h2>
+            </div>
             
            
         </section>
@@ -177,7 +182,15 @@
     function revealMessage() {
         document.getElementById("hiddenMessage").style.display = "block";
         document.querySelector(".form").style.display = "none";
+        console.log('onsubmit message showing');
       }
+</script>
+
+<script type="text/javascript">
+    function noGames() {
+        document.getElementById("noGamesMsg").style.display = "block";
+        console.log('Still no games ); ');
+    }
 </script>
 </body>
 </html>

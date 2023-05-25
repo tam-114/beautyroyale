@@ -166,3 +166,19 @@ ul {
 .img-credit {
     font-size: 0.8rem;
 }
+
+#noGamesMsg {
+    display: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    background: white;
+    color: purple;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.noGamesBg {
+    padding: 10px;
+}
