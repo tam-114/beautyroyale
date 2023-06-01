@@ -182,3 +182,15 @@ ul {
 .noGamesBg {
     padding: 10px;
 }
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .thanks-msg-lg {
+        position: relative; 
+        top: -200px;
+        left: -100px;
+    }
+}

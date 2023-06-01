@@ -17,6 +17,7 @@
 
     <!-- JS -->
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -86,7 +87,7 @@
                     <p class="mont-font pt-3 pb-3 pe-2 text-wrap">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
                     <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
                     <div id="noGamesMsg">
-                        <span class="noGamesBg">I don't have any games yet, sorry );</span>
+                        <span class="noGamesBg">We don't have any games yet, sorry );</span>
                     </div>
                 </div>
             </div>
@@ -121,26 +122,27 @@
                 </div>
             
                 <div class="form container d-flex col-lg-6 flex-column">     
-                    <form id="contact-form" onsubmit="revealMessage()">
+                    <!-- <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('hiddenMessage').style.display = 'block'; this.style.display = 'none';"> -->
+                        <!-- onsubmit="revealMessage()" -->
+                    <form action="" id="contact-form">
                         <input type="hidden" name="contact_number">
-                        <div class="input-group">
+                        
                             <label>Name</label>
                             <input type="text" name="user_name" class="form-control">
-                        </div>
-                        <div class="input-group">
+                      
                             <label>Email</label>
                             <input type="email" name="user_email" class="form-control">
-                        </div>
-                        <div class="input-group">
+                       
                             <label>Message</label>
                             <textarea name="message" class="form-control"></textarea>
-                        </div>
-                        <input type="submit" value="Send">
+                       
+                        <button type="submit" class="submit-btn btn btn-secondary rounded-3 mont-font text-center" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>
-            <div id="hiddenMessage" class="d-flex justify-content-center align-items-end offset-md-6 col-lg-6 col-12">
-                <h2  style="display: none" class="text-center bell-font">Thank you for messaging us! We will contact you shortly.</h2>
+            <div  class="d-flex justify-content-center align-items-end offset-md-6 col-lg-6 col-12 thanks-msg-lg">
+                <h3 id="hiddenMessage" class="hidden text-center mont-font">Thank you for messaging us!
+                    <br> We will contact you shortly.</h3>
             </div>
             
            
@@ -179,11 +181,25 @@
 </script>
 
 <script type="text/javascript">
-    function revealMessage() {
-        document.getElementById("hiddenMessage").style.display = "block";
-        document.querySelector(".form").style.display = "none";
-        console.log('onsubmit message showing');
-      }
+
+    // document.getElementById("contact-form").addEventListener("submit", function(event) {
+    //         event.preventDefault(); // Prevent form submission and page reload
+            
+    //         document.getElementById("hiddenMessage").classList.remove("hidden");
+    //         document.querySelector(".form").style.display = "none";
+    //     });
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission and page reload
+
+        // document.getElementById("contact-form").style.display = "none";
+        // document.getElementById("hiddenMessage").style.display = "block";
+
+        var form = document.getElementById("contact-form");
+        var hiddenMessage = document.getElementById("hiddenMessage");
+
+        form.classList.add("hidden");
+        hiddenMessage.classList.remove("hidden");
+    });
 </script>
 
 <script type="text/javascript">
