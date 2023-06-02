@@ -132,7 +132,7 @@ article {
 }
 /* Hero */
 .hero-bg {
-    background-image:  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url(/images/hair-salon.png);
+    background-image:  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url(../images/hair-salon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@ article {
 }
 
 .discover-bg {
-    background-image:  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(/images/arcade.png);
+    background-image:  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/arcade.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +218,7 @@ ul {
 }
 
 .banner-bg {
-    background-image: linear-gradient(rgba(117, 48, 124, 0.45),rgba(140, 33, 136, 0.45)), url(/images/salon2.png);
+    background-image: linear-gradient(rgba(117, 48, 124, 0.45),rgba(140, 33, 136, 0.45)), url(../images/salon2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,7 +291,7 @@ label {
 }
 
 .circle-bg {
-    background-image: url(/images/circle-bg.png), url(/images/circle-bg.png);
+    background-image: url(../images/circle-bg.png), url(../images/circle-bg.png);
     /* opacity: 0.5; */
     background-repeat: no-repeat, no-repeat;
     background-position: right -800px top 200px, right 800px bottom 200px;
@@ -303,7 +303,7 @@ label {
 }
 
 .footer-bg-img {
-    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(/images/combs.png);
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../images/combs.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
