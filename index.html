@@ -26,7 +26,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:wght@400;500&family=Urbanist:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
 
+    <style>
+    .tulpen-one-regular {
+        font-family: "Tulpen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:20vh;
+        color: white;
+    }
+    .hero_title {
+        position: relative; 
+        z-index: 2; 
+        transform: translateY(180px);
+    }
+
+    @media screen and (min-width: 768px) {
+        .tulpen-one-regular {
+            /* font-size: 200px; */
+            font-size: 34vh;
+        }
+        .hero_title {
+            transform: translateY(210px);
+        }
+    }
+
+    .hero_img {
+        height: 507px; 
+        position: relative; 
+        z-index: 3; 
+        opacity: 0.94;
+    }
+
+    .nav-link {
+        color: white;
+    }
+    </style>
 
 </head>
 <body class="circle-bg">
@@ -37,19 +73,51 @@
                 <p class="mont-font site-p">A faux hair salon</p>
             </div>
         </article>
-        <nav></nav>
-        <!-- ADD ROW CLASS -->
+
+    
         <section class="hero-bg">
-            <div class="d-flex row justify-content-center align-items-end flex-column color-white h-100 ">
+            <!-- ADD A NAVIGATION -->
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Games</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4">Call (407) 123 - 4567</button>
+                    <!-- <span class="navbar-text">
+                      Navbar text with an inline element
+                    </span> -->
+                  </div>
+                </div>
+              </nav>
+
+
+
+            <!-- <div class="d-flex row justify-content-center align-items-end flex-column color-white h-100 ">
                 <div class="col-lg-6 col-12 d-flex justify-content-center flex-column transform-x50 ps-md-3 ps-4 w-70">
                     <h1 class="urban-font fw-bold title-size pe-lg-5">Relax & Let Your Hair Flow</h1>
                     <p class="mont-font pe-lg-5 pt-3 pb-3 text-wrap">Looking for a Natural hair salon that makes your dream 'do come true? 
-                    <!-- <br> -->
                     Beauty Royale invites you to pick up a game, relax, and let our Gurus work their magic!</p>
                     <a href="#services" class="noLink">
                         <button type="button" class="btn btn-secondary w-50 rounded-3 mont-font">View Services</button>
                     </a>
                 </div>
+            </div> -->
+            <div class="container mx-auto">
+                <h1 class="text-center tulpen-one-regular hero_title">BEAUTY ROYALE</h1>
+                <img src="./images/afro-hero_no-bg.png" alt="" class="img-fluid mx-auto d-flex align-self-center hero_img">
             </div>
             
         </section>
@@ -62,9 +130,7 @@
                         <h1 class="urban-font fw-bold">Welcome to Beauty Royale</h1>
                         <br>
                         <p class="mont-font">Our salon wants to give a variety of services to people of color that are searching for their perfect hairstyles.</p>
-                        <br>
                         <p class="mont-font">We offer a luxurious experience where clients have the option to play video games as their style transforms!</p>
-                        <br>
                         <p class="mont-font">We take great measures to ensure our clients walk out with a smile--happy and satisfied.</p>
                     </div>
                     <div class="col-lg-8 col-12 d-flex pt-md-5 flex-row">
@@ -307,7 +373,7 @@
                     </div>
                 </div>
             </div>
-            <p class="d-flex justify-content-end align-items-end author-text pe-3">All Rights Reserved |&nbsp;<a href="https://taystan.design/" class="author">Taystan</a>&nbsp;&copy;</p>
+            <p class="d-flex justify-content-end align-items-end author-text pe-3">All Rights Reserved |&nbsp;<a href="https://taystan.dev/" class="author">Taystan</a>&nbsp;&copy;</p>
         </footer>
     </main>
 

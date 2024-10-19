@@ -136,7 +136,8 @@ article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 560px;
+    /* height: 560px; */
+    height: auto;
     position: relative;
 }
 
@@ -330,7 +331,7 @@ label {
 
 @media screen and (max-width: 768px) {
     .footer-bg-img {
-        height: 1200px!important;
+        height: 920px!important;
         transform: translate(0, 10%)!important;
     }
 
