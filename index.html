@@ -71,13 +71,13 @@
                         <a class="nav-link active d-md-none d-block" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Games</a>
+                        <a class="nav-link" href="#games">Games</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                       </li>
                     </ul>
-                    <a href="#services" class="btn btn-primary cta-menu">Call (407) 123 - 4567</a>
+                    <!-- <a href="#services" class="btn btn-primary cta-menu">Call (407) 123 - 4567</a> -->
                     <!-- <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4"></button> -->
                     <!-- <span class="navbar-text">
                       Navbar text with an inline element
@@ -95,23 +95,27 @@
                         <div class="row flex-column mb-5 hero_content">
                             <h1 class="urban-font pb-2">Your Royale Beauty Experience</h1>
                             <p class="mont-font pb-1">Feel beautiful and empowered with our personalized beauty services.</p>
-                            <a href="#services" class="btn btn-primary" style="width: 270px;">Book Your Appointment</a>
+                            <div class="d-flex flex-row justify-content-center justify-content-lg-start gx-2">
+                                <a href="#services" class="btn btn-primary me-3" style="width: 170px;">Call Us</a>
+                                <a href="#services" class="btn btn-primary2">View Services</a>
+                            </div>
+                            
                         </div>
                       <div class="row justify-content-center align-items-center flex-row">
-                        <div class="col">
+                        <div class="col d-flex justify-content-center justify-content-lg-start">
                             <div class="card-bg-img1"> 
                                 <span class="hero_card1-title">New Games</span>
                                 <span class="hero_card1-subtitle">+2 games</span>
-                                <a href="#" class="hero_card1-btn">
+                                <a href="#games" class="hero_card1-btn">
                                     <img src="./images/arrow-right_white.png" alt="" style="width: 22px; height: 20px;">
                                 </a>
                             </div>                           
                         </div>
-                        <div class="col">
+                        <div class="col d-flex justify-content-center justify-content-lg-start">
                             <div class="card-bg-img2"> 
                                 <span class="hero_card2-title">20% OFF</span>
                                 <span class="hero_card2-subtitle">All styles</span>
-                                <a href="#" class="hero_card1-btn">
+                                <a href="#services" class="hero_card1-btn">
                                     <img src="./images/arrow-right_white.png" alt="" style="width: 22px; height: 20px;">
                                 </a>
                             </div>     
@@ -121,7 +125,7 @@
               
                     <!-- Woman Image -->
                     <div class="col-md-6 hero-image">
-                      <img src="./images/afro-hero_no-bg.png" alt="Beauty Model" class="img-fluid" style="height:100vh;">
+                      <img src="./images/afro-hero_no-bg.png" alt="Beauty Model" class="img-fluid hero_model" style="height:100vh;">
                     </div>
                   </div>
                 </div>
@@ -154,15 +158,14 @@
             </article>
         </section>
         <!-- ADD ROW CLASS -->
-        <section class="discover-bg mb-5">
-            <div class="d-flex row container-fluid justify-content-center align-items-end flex-column color-white h-100 ">
-                <div class="col-lg-6 col-12 d-flex justify-content-center flex-column transform-x50-lg ps-md-3 ps-5 w-70 text-center">
-                    <h1 class="urban-font title-size">Discover Our Video Games</h1>
-                    <p class="mont-font pt-3 pb-3 pe-2 text-wrap">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
-                    <button type="button" class="btn btn-primary text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
-                    <div id="noGamesMsg">
-                        <span class="noGamesBg">We don't have any games yet, sorry );</span>
-                    </div>
+        <section class="discover-bg mb-5" id="games">
+            <div class="container mx-auto d-flex justify-content-center align-items-center flex-column discover_content text-center">
+                <h4 class="bell-font">our games</h4>
+                <h1 class="urban-font">Discover Our Video Games</h1>
+                <p class="mont-font pt-3 pb-3 text-wrap text-center" style="max-width: 600px;">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
+                <button type="button" class="btn btn-primary text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
+                <div id="noGamesMsg">
+                    <span class="noGamesBg">We don't have any games yet, sorry );</span>
                 </div>
             </div>
         </div>
@@ -250,8 +253,9 @@
 ----- Call for a free 15-minute consultation to discuss your hair needs or answers to your questions! Video calling now available. -->
         <section class="pt-5 pb-5">
             <div class="banner-bg">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <p class="mont-font color-white text-center banner-text"> Call for a free 15-minute consultation to discuss your hair needs or answers to your questions! 
+                <div class="d-flex justify-content-center align-items-center flex-column banner-text">
+                    <!-- <h4 class="bell-font">consult us</h4> -->
+                    <p class="mont-font color-white text-center"> Call for a free 15-minute consultation to discuss your hair needs or answers to your questions! 
                     <br>
                     Video calling now available.</p>
                     <a href="tel:4071234567" class="noLink">
@@ -261,8 +265,30 @@
             </div>
         </section>
 
+
+
+
+
+
+
         <!-- Meet Our Team GURUS -->
         <section></section>
+
+
+
+
+        <!-- Instagram carousel/grid photos -->
+        <section></section>
+
+
+
+
+
+
+
+
+
+
         <!-- Contact -->
         <!-- Add styling in css, KEEP VALUES -->
         <section class="pb-5">

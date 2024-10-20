@@ -28,6 +28,7 @@ body {
 h1 {
     font-size: 2.98598rem;
     letter-spacing: 1.5px;
+    line-height: 1;
 }
 
 h2 {
@@ -45,7 +46,7 @@ h4 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     /* Convert to rem */
 }
 
@@ -106,6 +107,7 @@ article {
 .bell-font {
     /* h2 */
     font-family: 'Belleza', sans-serif;
+    margin-bottom: 2px;
 }
 
 .mont-font {
@@ -136,9 +138,18 @@ article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 560px; */
     height: auto;
     position: relative;
+}
+
+.hero_model {
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .hero_model {
+        height: 100%!important;
+    }
 }
 
 .discover-bg {
@@ -148,6 +159,16 @@ article {
     background-size: cover;
     height: 560px;
     position: relative;
+}
+
+.discover_content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .btn-secondary {
@@ -320,21 +341,55 @@ ul {
     background-color: #71073c; /* A bright, fun pink for the CTA button */
     border: none;
     padding: 12px 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 10px;
     transition: transform 0.3s ease; /* Simple hover animation */
     color:white;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-primary:active {
     transform: scale(1.1); /* Adds a fun hover effect */
     opacity: 0.7;
     background-color: rgb(113 7 60 / 90%);
     border: 1px solid #71073c;
     font-weight: 500;
   }
+
+  .btn-primary:active:focus {
+    box-shadow:0 0 0 .25rem rgb(93 31 77 / 50%);
+  }
+
+  .btn-primary2 {
+    background-color: transparent;
+    border: 1px solid #71073c;
+    padding: 12px 30px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Simple hover animation */
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .btn-primary2:hover, .btn-primary2:active {
+    transform: scale(1.1); /* Adds a fun hover effect */
+    opacity: 0.7;
+    background-color: rgb(113 7 60 / 90%);
+    border: 1px solid #71073c;
+    font-weight: 500;
+    color: white;
+  }
+
+  .btn-primary2:active:focus {
+    box-shadow:0 0 0 .25rem rgb(93 31 77 / 50%);
+  }
+
   .hero_card1-title {
       content:"";
       display: block;
@@ -391,6 +446,10 @@ ul {
       padding: 10px;
       padding-bottom: 12px;
   }
+
+  .hero_card1-btn:hover {
+    opacity: 0.8;
+}
   
   .card-bg-img1 {
       background-image: url("../images/hero_card1.png");
@@ -425,7 +484,7 @@ ul {
     }
 
     .btn-primary {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         display: flex;
     }
 }
@@ -475,37 +534,36 @@ ul {
 }
 
 .banner-bg {
-    background-image: linear-gradient(rgba(117, 48, 124, 0.45),rgba(140, 33, 136, 0.45)), url(../images/salon2.png);
+    background-image: linear-gradient(rgba(117, 48, 124, 0.45),rgba(140, 33, 136, 0.9)), url(../images/salon2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
     width: 100%;
+    position: relative;
 }
 
 .banner-text {
-    position: relative;
-    transform: translate(0, 90%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
     font-weight: 500;
     letter-spacing: 0.05rem;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 600px;
 }
 
-@media screen and (min-width: 375px) {
-    .banner-text {
-        position: relative;
-        transform: translate(0, 20%)!important;
-        font-size: 16px;
-    }
-
-    .banner-call {
-        bottom: -20px!important;
+@media screen and (min-width: 992px) {
+    .banner-bg {
+        height: 250px;
     }
 }
 
-.banner-call {
-    position: relative;
-    bottom: -60px;
-}
 
 .noLink {
     text-decoration: none;
