@@ -251,23 +251,124 @@
     .nav-link {
         color: white;
     }
-    </style>
+
+    .hero-section {
+        position: relative;
+        background:  linear-gradient(135deg, #2e003e 0%, #c77b9b 50%, #2e003e 100%);
+        color: #fff;
+        }
+
+.btn-primary {
+  background-color: #71073c; /* A bright, fun pink for the CTA button */
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Simple hover animation */
+  color:white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1); /* Adds a fun hover effect */
+  opacity: 0.7;
+  background-color: rgb(113 7 60 / 90%);
+  border: 1px solid #71073c;
+  font-weight: 500;
+}
+
+.hero_card1-title {
+    content:"";
+    display: block;
+    width: 100%;
+    top: 29%;
+    position: relative;
+    left: 50%;
+    color: black;
+    z-index: 100;
+    font-weight: 500;
+}
+
+.hero_card1-subtitle {
+    content:"";
+    display: block;
+    width: 100%;
+    top: 27%;
+    position: relative;
+    left: 68%;
+    color: black;
+    font-size: 12px;
+}
+
+.hero_card2-title {
+    content:"";
+    display: block;
+    width: 100%;
+    top: 29%;
+    position: relative;
+    left: 60%;
+    color: black;
+    z-index: 100;
+    font-weight: 500;
+}
+
+.hero_card2-subtitle {
+    content:"";
+    display: block;
+    width: 100%;
+    top: 27%;
+    position: relative;
+    left: 68%;
+    color: black;
+    font-size: 12px;
+}
+
+.hero_card1-btn {
+    border: none;
+    border-radius: 10px;
+    background-color:#432063;
+    top: 41%;
+    position: relative;
+    left: 75%;
+    padding: 10px;
+    padding-bottom: 12px;
+}
+
+.card-bg-img1 {
+    background-image: url("images/hero_card1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.card-bg-img2 {
+    background-image: url("images/hero_card2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+</style>
 
 </head>
 <body class="circle-bg">
     <main>
-        <article>
+        <!-- <article>
             <div class="text-center pt-4 pb-3">
                 <h1 class="urban-font fw-bold site-title">Beauty Royale</h1>
                 <p class="mont-font site-p">A faux hair salon</p>
             </div>
-        </article>
+        </article> -->
 
     
-        <section class="hero-bg">
+        <section class="hero-section">
             <!-- ADD A NAVIGATION -->
             
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -284,7 +385,8 @@
                         <a class="nav-link" href="#">Services</a>
                       </li>
                     </ul>
-                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4">Call (407) 123 - 4567</button>
+                    <a href="#services" class="btn btn-primary">Call (407) 123 - 4567</a>
+                    <!-- <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4"></button> -->
                     <!-- <span class="navbar-text">
                       Navbar text with an inline element
                     </span> -->
@@ -293,17 +395,46 @@
               </nav>
 
             
-                <h1 class="text-center poppins-regular hero_title" data-aos="fade-down" data-aos-duration="1500">BEAUTY ROYALE</h1>
-            </div>
-
-            <div class="container mx-auto"> 
-                <img src="./images/afro-hero_no-bg 1.png" alt="" class="img-fluid mx-auto d-flex align-self-center hero_img" draggable="false">
-            </div>
-            
+              <div>
+                <div class="container position-relative" style="z-index: 100;">
+                  <div class="row align-items-center">
+                    <!-- Text and CTA Button -->
+                    <div class="col-md-6 hero-text d-flex flex-column">
+                        <div class="row flex-column mb-5">
+                            <h1 class="urban-font pb-2">Your Royale Beauty Experience</h1>
+                            <p class="mont-font pb-1">Feel beautiful and empowered with our personalized beauty services.</p>
+                            <a href="#services" class="btn btn-primary" style="width: 270px;">Book Your Appointment</a>
+                        </div>
+                      <div class="row justify-content-center align-items-center flex-row">
+                        <div class="col">
+                            <div class="card-bg-img1"> 
+                                <span class="hero_card1-title">New Games</span>
+                                <span class="hero_card1-subtitle">+2 games</span>
+                                <a href="#" class="hero_card1-btn">
+                                    <img src="./images/arrow-right_white.png" alt="" style="width: 22px; height: 20px;">
+                                </a>
+                            </div>                           
+                        </div>
+                        <div class="col">
+                            <div class="card-bg-img2"> 
+                                <span class="hero_card2-title">20% OFF</span>
+                                <span class="hero_card2-subtitle">All styles</span>
+                                <a href="#" class="hero_card1-btn">
+                                    <img src="./images/arrow-right_white.png" alt="" style="width: 22px; height: 20px;">
+                                </a>
+                            </div>     
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Woman Image -->
+                    <div class="col-md-6 hero-image">
+                      <img src="./images/afro-hero_no-bg.png" alt="Beauty Model" class="img-fluid" style="height:100vh;">
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
-        <p class="great-vibes-regular text-center" style="margin-bottom: 0; position: relative; z-index: 4; transform: translateY(-10vh); color: white;    line-height: 1;
-        letter-spacing: 10px;
-        font-size: 1.5rem;" data-aos="fade-down" data-aos-duration="1500">where beauty meets gaming</p>
         
         <section class="mt-5 mb-5">
             <article>
@@ -336,7 +467,7 @@
                 <div class="col-lg-6 col-12 d-flex justify-content-center flex-column transform-x50-lg ps-md-3 ps-5 w-70 text-center">
                     <h1 class="urban-font title-size">Discover Our Video Games</h1>
                     <p class="mont-font pt-3 pb-3 pe-2 text-wrap">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
-                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
+                    <button type="button" class="btn btn-primary text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">View Our Games</button>
                     <div id="noGamesMsg">
                         <span class="noGamesBg">We don't have any games yet, sorry );</span>
                     </div>
@@ -351,13 +482,13 @@
             <div class="d-flex justify-content-center align-items-center text-center flex-column pb-5">
                 <h4 class="bell-font">our services</h4>
                 <h1 class="urban-font fw-bold pb-3">Your New 'Do</h1>
-                <p class="mont-font" style="font-size: 16px;">*Each of our services include a trim, shampoo and conditioning treatment, and hair consultation.</p>
+                <p class="mont-font" style="font-size: 16px;">Each of our services include a trim,<br> shampoo and conditioning treatment, and hair consultation.</p>
             </div>
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="./images/wash-n-go.jpg" class="card-img-top card-v-height" alt="...">
+                            <img src="./images/wash-n-go.jpg" class="card-img-top" alt="..." style="height: 250px;">
                             <div class="card-body">
                                 <h5 class="card-title">Wash N' Go</h5>
                                 <p class="card-text">Defining your curls with no need for heat and little manipulation.</p>
@@ -367,20 +498,19 @@
 
                     <div class="col">
                         <div class="card">
-                            <img src="./images/conrows.jpg" class="card-img-top" alt="..." style="height: 224px;">
+                            <img src="./images/conrows.jpg" class="card-img-top" alt="..." style="height: 250px;">
                             <div class="card-body">
                                 <h5 class="card-title">Quick Braid Down</h5>
-                                <p class="card-text"> Provides a foundation for you in stylistic cornrows or straight-back.</p>
+                                <p class="card-text"> Provides a foundation for you in stylistic cornrows.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="./images/istockphoto-1059157466-612x612.jpg" class="card-img-top" alt="..." style="height: 224px;">
+                            <img src="./images/istockphoto-1059157466-612x612.jpg" class="card-img-top" alt="..." style="height: 250px;">
                             <div class="card-body">
                                 <h5 class="card-title">Twist Out</h5>
-                                <p class="card-text">Defining the natural curl pattern of your hair with rollers and curling tools.</p>
-                                
+                                <p class="card-text">Defining your natural curl pattern with curling products.</p>
                             </div>
                         </div>
                     </div>
@@ -433,7 +563,7 @@
                     <br>
                     Video calling now available.</p>
                     <a href="tel:4071234567" class="noLink">
-                    <button type="button" class="btn btn-secondary rounded-3 mont-font text-center d-flex justify-self-end align-self-end banner-call">Call (407) 123 - 4567</button>
+                    <button type="button" class="btn btn-primary text-center d-flex justify-self-end align-self-end banner-call">Call (407) 123 - 4567</button>
                     </a>
                 </div>
             </div>
@@ -515,7 +645,7 @@
                             <label>Special Requests</label>
                             <textarea name="message" class="form-control"></textarea>
                        
-                        <button type="submit" class="submit-btn btn btn-secondary rounded-3 mont-font text-center" value="Submit">Submit</button>
+                        <button type="submit" class="submit-btn btn btn-primary rounded-3 mont-font text-center" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>
