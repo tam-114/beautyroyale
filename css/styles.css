@@ -168,12 +168,268 @@ ul > li {
     font-size: 18px;
     text-align: center;
     /* padding-bottom: 1rem; */
+    display: flex;
+    align-self: center;
 }
 
 ul {
     padding-left: 0!important;
     
 }
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+      .tulpen-one-regular {
+          font-family: "Tulpen One", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+  
+      }
+      .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+      .hero_img {
+          /* height: 507px;  */
+          /* height: 100vh; */
+          height: 100vh;
+          position: relative; 
+          z-index: 3; 
+          opacity: 0.94;
+      }
+  
+      .nav-link {
+          color: white;
+      }
+  
+      .hero-section {
+          position: relative;
+          background:  linear-gradient(135deg, #2e003e 0%, #c77b9b 50%, #2e003e 100%);
+          color: #fff;
+          }
+  
+  .btn-primary {
+    background-color: #71073c; /* A bright, fun pink for the CTA button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Simple hover animation */
+    color:white;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.1); /* Adds a fun hover effect */
+    opacity: 0.7;
+    background-color: rgb(113 7 60 / 90%);
+    border: 1px solid #71073c;
+    font-weight: 500;
+  }
+  
+  .hero_card1-title {
+      content:"";
+      display: block;
+      width: 100%;
+      top: 29%;
+      position: relative;
+      left: 50%;
+      color: black;
+      z-index: 100;
+      font-weight: 500;
+  }
+  
+  .hero_card1-subtitle {
+      content:"";
+      display: block;
+      width: 100%;
+      top: 27%;
+      position: relative;
+      left: 68%;
+      color: black;
+      font-size: 12px;
+  }
+  
+  .hero_card2-title {
+      content:"";
+      display: block;
+      width: 100%;
+      top: 29%;
+      position: relative;
+      left: 60%;
+      color: black;
+      z-index: 100;
+      font-weight: 500;
+  }
+  
+  .hero_card2-subtitle {
+      content:"";
+      display: block;
+      width: 100%;
+      top: 27%;
+      position: relative;
+      left: 68%;
+      color: black;
+      font-size: 12px;
+  }
+  
+  .hero_card1-btn {
+      border: none;
+      border-radius: 10px;
+      background-color:#432063;
+      top: 41%;
+      position: relative;
+      left: 75%;
+      padding: 10px;
+      padding-bottom: 12px;
+  }
+  
+  .card-bg-img1 {
+      background-image: url("../images/hero_card1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      width: 200px;
+  }
+  
+  .card-bg-img2 {
+      background-image: url("../images/hero_card2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      width: 200px;
+  }
+  
+  .cta-menu {
+      width: 224px;
+  }
+  
+  @media screen and (max-width: 992px) {
+      .cta-menu {
+          margin: 0 auto;
+          display: flex;
+      }
+      
+    .hero_content {
+        text-align: center;
+    }
+
+    .btn-primary {
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
 
 .img-credit {
     font-size: 0.8rem;
@@ -310,12 +566,21 @@ label {
     background-repeat: no-repeat;
     color: white;
     position: relative;
-    bottom: -15%;
+    /* bottom: -15%; */
+    bottom: 0;
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
+    height: 100%;
 }
+/* 
+@media screen and (max-width: 991px) {
+    .footer-bg-img {
+        height: 1000px!important;
+    }
+} */
 
-@media screen and (min-width: 374px) {
+/*
+@media screen and (min-width: 374px){
     .footer-bg-img {
         height: 1000px!important;
     }
@@ -332,7 +597,6 @@ label {
 @media screen and (max-width: 768px) {
     .footer-bg-img {
         height: 920px!important;
-        transform: translate(0, 10%)!important;
     }
 
     .author-text {
@@ -344,9 +608,6 @@ label {
         transform: translate(0, 20%)!important;
     }
 }
-
-/* .footer-text {
-
 } */
 
 p.footer-links span {
@@ -354,7 +615,7 @@ p.footer-links span {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
-
+/* 
 @media (min-width: 992px) {
     .footer-text {
         transform: translate(0, 30%);
@@ -368,7 +629,7 @@ p.footer-links span {
     .author-text {
         transform: translate(0, 100%)!important;
     }
-}
+} */
 
 .author {
     color: inherit;
@@ -384,6 +645,7 @@ p.footer-links span {
     bottom: -29%;
     font-family: 'Belleza', sans-serif;
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 .f-18 {
