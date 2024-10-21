@@ -94,6 +94,10 @@ p {
     width: 200px;
 }
 
+.darkbrown_bg {
+    background-color: #261A17;
+}
+
 article {
     padding-left: 30px;
     padding-right: 30px;
@@ -103,6 +107,12 @@ article {
     /* h1 */
     font-family: 'Urbanist', sans-serif;
 }
+
+.bruno-font {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .bell-font {
     /* h2 */
@@ -142,15 +152,24 @@ article {
     position: relative;
 }
 
-.hero_model {
-    height: 100vh;
+.hero-image {
+    display: flex;
+    align-self: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+
+
+.hero_model {
+    object-fit: contain;
+}
+
+/* @media screen and (max-width: 768px) {
     .hero_model {
         height: 100%!important;
     }
-}
+} */
+
+
 
 .discover-bg {
     background-image:  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/arcade.png);
@@ -333,29 +352,37 @@ ul {
   
       .hero-section {
           position: relative;
-          background:  linear-gradient(135deg, #2e003e 0%, #c77b9b 50%, #2e003e 100%);
+          /* background:  linear-gradient(135deg, #2e003e 0%, #c77b9b 50%, #2e003e 100%); */
+          background-color: #261A17;
           color: #fff;
           }
   
+          a .btn {
+            font-family: "Montserrat", sans-serif;
+          }
   .btn-primary {
-    background-color: #71073c; /* A bright, fun pink for the CTA button */
     border: none;
     padding: 12px 30px;
     font-size: 0.8rem;
-    border-radius: 10px;
+    border-radius: 0;
     transition: transform 0.3s ease; /* Simple hover animation */
     color:white;
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    background-color: transparent;
+    text-shadow: 2px 0px 3px #FE259B;
+    border: 1px solid white;
+    /* box-shadow: 0 0 50px #FE259B; */
+    box-shadow: inset 0 0 9px #FE259B, 0 0 50px #FE259B;
   }
   
   .btn-primary:hover, .btn-primary:active {
     transform: scale(1.1); /* Adds a fun hover effect */
     opacity: 0.7;
-    background-color: rgb(113 7 60 / 90%);
-    border: 1px solid #71073c;
+    background-color: rgb(254 37 155 / 100%);
+    border: 1px solid white;
     font-weight: 500;
   }
 
@@ -393,11 +420,11 @@ ul {
   .hero_card1-title {
       content:"";
       display: block;
-      width: 100%;
+      width: 90px;
       top: 29%;
       position: relative;
-      left: 50%;
-      color: black;
+      left: 55%;
+      color: white;
       z-index: 100;
       font-weight: 500;
   }
@@ -405,22 +432,22 @@ ul {
   .hero_card1-subtitle {
       content:"";
       display: block;
-      width: 100%;
+      width: 90px;
       top: 27%;
       position: relative;
-      left: 68%;
-      color: black;
+      left: 66%;
+      color: white;
       font-size: 12px;
   }
   
   .hero_card2-title {
       content:"";
       display: block;
-      width: 100%;
+      width: 90px;
       top: 29%;
       position: relative;
       left: 60%;
-      color: black;
+      color: white;
       z-index: 100;
       font-weight: 500;
   }
@@ -428,11 +455,11 @@ ul {
   .hero_card2-subtitle {
       content:"";
       display: block;
-      width: 100%;
+      width: 90px;
       top: 27%;
       position: relative;
-      left: 68%;
-      color: black;
+      left: 65%;
+      color: white;
       font-size: 12px;
   }
   
@@ -440,11 +467,11 @@ ul {
       border: none;
       border-radius: 10px;
       background-color:#432063;
-      top: 41%;
+      top: 35%;
       position: relative;
-      left: 75%;
-      padding: 10px;
-      padding-bottom: 12px;
+      left: 72%;
+      padding: 5px;
+      padding-bottom: 8px;
   }
 
   .hero_card1-btn:hover {
@@ -452,27 +479,40 @@ ul {
 }
   
   .card-bg-img1 {
-      background-image: url("../images/hero_card1.png");
+      /* background-image: url("../images/hero_card1.png"); */
+      background-image: url("../images/card-hero1.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 200px;
-      width: 200px;
+      width: 300px;
+      height: 188px;
   }
   
   .card-bg-img2 {
-      background-image: url("../images/hero_card2.png");
+      /* background-image: url("../images/hero_card2.png"); */
+      background-image: url("../images/card-hero2.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 200px;
-      width: 200px;
+      width: 300px;
+      height: 188px;
   }
   
   .cta-menu {
       width: 224px;
   }
+
+  .hero_content {
+    text-align: center;
+    }
   
+    .pixel-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
   @media screen and (max-width: 992px) {
       .cta-menu {
           margin: 0 auto;
@@ -488,6 +528,16 @@ ul {
         display: flex;
     }
 }
+
+/* .welcome2 {
+    max-width: 282px;
+}
+
+@media screen and (max-width: 745px) {
+    .welcome2 {
+        max-width: 147px;
+    }
+} */
 
 
 .img-credit {
@@ -522,13 +572,30 @@ ul {
     }
 }
 
-.card-text {
-    font-size: 18px!important;
+.neon-circle_bg {
+    /* background-image: url("../images/neon-circle 2.png"); */
+    background-position: -40% -300px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.card {
-    box-shadow: 1px 2px 2px rgb(210, 210, 210);
+.card-text {
+    font-size: 18px!important;
+    text-align: center;
 }
+
+.card1 {
+    box-shadow: inset 0 0 9px #00AAF6, 0 0 10px #00AAF6;
+}
+
+.card2 {
+    box-shadow: inset 0 0 9px #FE259B, 0 0 10px #FE259B;
+}
+
+.card3 {
+    box-shadow: inset 0 0 9px #B026FF, 0 0 10px #B026FF;
+}
+
 .card:hover {
     box-shadow: 3px 5px 5px rgb(158, 158, 158);
 }
@@ -576,6 +643,7 @@ ul {
 
 label {
     margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 992px) {
