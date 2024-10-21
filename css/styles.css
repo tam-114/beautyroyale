@@ -417,6 +417,12 @@ ul {
     box-shadow:0 0 0 .25rem rgb(93 31 77 / 50%);
   }
 
+
+  .hero-subtitle {
+    max-width: 500px;
+    margin: 15px auto 30px;
+  }
+
   .hero_card1-title {
       content:"";
       display: block;
@@ -432,7 +438,7 @@ ul {
   .hero_card1-subtitle {
       content:"";
       display: block;
-      width: 90px;
+      width: 54px;
       top: 27%;
       position: relative;
       left: 66%;
@@ -455,7 +461,7 @@ ul {
   .hero_card2-subtitle {
       content:"";
       display: block;
-      width: 90px;
+      width: 50px;
       top: 27%;
       position: relative;
       left: 65%;
@@ -465,17 +471,20 @@ ul {
   
   .hero_card1-btn {
       border: none;
-      border-radius: 10px;
       background-color:#432063;
       top: 35%;
       position: relative;
       left: 72%;
-      padding: 5px;
-      padding-bottom: 8px;
+      padding: 0 5px 4px;
   }
 
   .hero_card1-btn:hover {
     opacity: 0.8;
+}
+
+.hero-arrow {
+    width: 17px;
+    height: 14px;
 }
   
   .card-bg-img1 {
@@ -497,6 +506,41 @@ ul {
       width: 300px;
       height: 188px;
   }
+
+  @media screen and  (min-width: 992px) and  (max-width: 1294px) {
+    .card-bg-img1, .card-bg-img2 {
+        width: 220px;
+    }
+
+    .hero_card1-title {
+        top: 32%;
+        left: 46%;
+    }
+
+    .hero_card1-subtitle {
+        top: 29%;
+        left: 61%;
+    }
+
+    .hero_card2-title {
+        top: 32%;
+        left: 55%;
+    }
+
+    .hero_card2-subtitle {
+        top: 29%;
+        left: 63%;
+    }
+
+
+    .hero_card1-btn {
+        top: 32%;
+        left: 73%;
+        padding: 0 5px 4px;
+    }
+
+
+  }
   
   .cta-menu {
       width: 224px;
@@ -509,6 +553,12 @@ ul {
     .pixel-icon {
         width: 24px;
         height: 24px;
+    }
+
+    .pixel-icon2 {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
     }
 
 
