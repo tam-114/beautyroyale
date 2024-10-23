@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- JS -->
     <script src="js/script.js"></script>
@@ -153,14 +153,13 @@
         <section class="discover-bg" id="games">
             <div class="container mx-auto d-flex justify-content-center align-items-center flex-column discover_content text-center">
                 <h4 class="bruno-font"> <span><img src="./images/pixel-controller.png" alt="" class="pixel-icon" data-aos="flip-left"></span> OUR GAMES</h4>
-                <h1 class="bruno-font">Discover Our Video Games</h1>
-                <p class="mont-font pt-3 pb-3 text-wrap text-center" style="max-width: 600px;">We provide a large selection of video games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
+                <h1 class="bruno-font">Discover Our Arcade Games</h1>
+                <p class="mont-font pt-3 pb-3 text-wrap text-center" style="max-width: 600px;">We provide a large selection of arcade games to play while we style your new 'do. Feel free to choose a hand-held console or sit in front of an arcade machine and have a great time getting a new high score!</p>
                 <button type="button" class="btn btn-primary text-center d-flex justify-self-center align-self-center mb-4" onclick="noGames()">VIEW OUR GAMES</button>
                 <div id="noGamesMsg">
                     <span class="noGamesBg">We don't have any games yet, sorry );</span>
                 </div>
             </div>
-        </div>
         </section>
 
         <!-- Services -->
@@ -442,19 +441,8 @@
 </script>
 
 <script type="text/javascript">
-
-    // document.getElementById("contact-form").addEventListener("submit", function(event) {
-    //         event.preventDefault(); // Prevent form submission and page reload
-            
-    //         document.getElementById("hiddenMessage").classList.remove("hidden");
-    //         document.querySelector(".form").style.display = "none";
-    //     });
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission and page reload
-
-        // document.getElementById("contact-form").style.display = "none";
-        // document.getElementById("hiddenMessage").style.display = "block";
-
         var form = document.getElementById("contact-form");
         var hiddenMessage = document.getElementById("hiddenMessage");
 
@@ -471,14 +459,3 @@
 </script>
 </body>
 </html>
-<!-- LINE 219 Hero -->
-             <!-- <div class="d-flex row justify-content-center align-items-end flex-column color-white h-100 ">
-                <div class="col-lg-6 col-12 d-flex justify-content-center flex-column transform-x50 ps-md-3 ps-4 w-70">
-                    <h1 class="urban-font fw-bold title-size pe-lg-5">Relax & Let Your Hair Flow</h1>
-                    <p class="mont-font pe-lg-5 pt-3 pb-3 text-wrap">Looking for a Natural hair salon that makes your dream 'do come true? 
-                    Beauty Royale invites you to pick up a game, relax, and let our Gurus work their magic!</p>
-                    <a href="#services" class="noLink">
-                        <button type="button" class="btn btn-secondary w-50 rounded-3 mont-font">View Services</button>
-                    </a>
-                </div>
-            </div> -->
