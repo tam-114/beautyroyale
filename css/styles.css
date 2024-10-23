@@ -7,6 +7,7 @@
     --brown: #685636;
     --gray: #686868;
     --darkbrown: #261A17;
+    --cream: #F5F5DC;
 }
 
 /* ---------- Normalizing ---------- */
@@ -25,6 +26,7 @@ body {
     overflow-x: hidden!important;
     position: relative;
     color: var(--darkbrown);
+    background-color: var(--cream);
 }
 
 h1 {
@@ -132,6 +134,10 @@ article {
     color: #fff;
 }
 
+.color-cream {
+    color: var(--cream);
+}
+
 /* z-index */
 .z-1 {
     z-index: 1;
@@ -165,11 +171,13 @@ article {
     object-fit: contain;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 990px) {
     .hero_model {
         height: 100%!important;
+        width: 70%!important;
+        margin: 0 auto;
     }
-} */
+}
 
 
 
@@ -190,7 +198,7 @@ article {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--cream);
 }
 
 
@@ -230,7 +238,6 @@ article {
     z-index: 2;
     color: white;
     height: 100%;
-
 }
 
 
@@ -532,6 +539,9 @@ ul {
     width: 17px;
     height: 14px;
 }
+.card-body {
+    background-color: var(--cream);
+}
   
   .card-bg-img1 {
       /* background-image: url("../images/hero_card1.png"); */
@@ -788,7 +798,7 @@ label {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--cream);
     position: relative;
     /* bottom: -15%; */
     bottom: 0;
