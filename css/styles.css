@@ -26,7 +26,7 @@ body {
     overflow-x: hidden!important;
     position: relative;
     color: var(--darkbrown);
-    background-color: var(--cream);
+    background-color: var(--white);
 }
 
 h1 {
@@ -540,7 +540,7 @@ ul {
     height: 14px;
 }
 .card-body {
-    background-color: var(--cream);
+    background-color: var(--white);
 }
   
   .card-bg-img1 {
