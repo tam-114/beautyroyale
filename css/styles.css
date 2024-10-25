@@ -7,7 +7,6 @@
     --brown: #685636;
     --gray: #686868;
     --darkbrown: #261A17;
-    --cream: #F5F5DC;
 }
 
 /* ---------- Normalizing ---------- */
@@ -134,10 +133,6 @@ article {
     color: #fff;
 }
 
-.color-cream {
-    color: var(--cream);
-}
-
 /* z-index */
 .z-1 {
     z-index: 1;
@@ -198,7 +193,7 @@ article {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: var(--cream);
+    color: var(--white);
 }
 
 
@@ -802,7 +797,7 @@ input {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: var(--cream);
+    color: var(--white);
     position: relative;
     /* bottom: -15%; */
     bottom: 0;
