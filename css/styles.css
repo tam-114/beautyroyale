@@ -406,13 +406,13 @@ ul {
           a .btn {
             font-family: "Montserrat", sans-serif;
           }
-
+/* 
   .btn-primary {
     border: none;
     padding: 12px 30px;
     font-size: 0.8rem;
     border-radius: 0;
-    transition: transform 0.3s ease; /* Simple hover animation */
+    transition: transform 0.3s ease;
     color:white;
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -421,12 +421,11 @@ ul {
     background-color: transparent;
     text-shadow: 2px 0px 3px #FE259B;
     border: 1px solid white;
-    /* box-shadow: 0 0 50px #FE259B; */
     box-shadow: inset 0 0 9px #FE259B, 0 0 50px #FE259B;
   }
   
   .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    transform: scale(1.1); /* Adds a fun hover effect */
+    transform: scale(1.1); 
     opacity: 0.7;
     background-color: rgb(254 37 155 / 100%);
     border: 1px solid white;
@@ -444,7 +443,7 @@ ul {
     padding: 12px 30px;
     font-size: 0.8rem;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Simple hover animation */
+    transition: transform 0.3s ease;
     color:white;
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -453,7 +452,7 @@ ul {
   }
   
   .btn-primary2:hover, .btn-primary2:active {
-    transform: scale(1.1); /* Adds a fun hover effect */
+    transform: scale(1.1);
     opacity: 0.7;
     background-color: rgb(113 7 60 / 90%);
     border: 1px solid #71073c;
@@ -463,7 +462,64 @@ ul {
 
   .btn-primary2:active:focus {
     box-shadow:0 0 0 .25rem rgb(93 31 77 / 50%);
-  }
+  } */
+  .btn-primary {
+    border: none;
+    padding: 12px 30px;
+    font-size: 0.8rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    text-shadow: 2px 0px 3px #FE259B;
+    border: 1px solid white;
+    box-shadow: inset 0 0 9px #FE259B, 0 0 50px #FE259B;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The hover animation effect */
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #00AAF6, #FE259B, #B026FF, #00AAF6);
+    background-size: 300%;
+    z-index: -1; /* Keeps it behind the button */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: border-glow 2s linear infinite;
+}
+
+.btn-primary:hover::before {
+    opacity: 1; /* Show the glow on hover */
+}
+
+/* Keyframes to animate the light around the border */
+@keyframes border-glow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    transform: scale(1.1);
+    opacity: 0.7;
+    background-color: rgba(254, 37, 155, 1);
+    font-weight: 500;
+    box-shadow: 0 0 20px 0.25rem rgba(254, 37, 155, 0.5);
+}
+
 
 
   .hero-subtitle {
@@ -534,6 +590,11 @@ ul {
     width: 17px;
     height: 14px;
 }
+
+
+
+
+
 .card-body {
     background-color: var(--white);
 }
@@ -847,6 +908,8 @@ ul {
     height: 350px;
 }
 
+/* ============= BANNER ================== */
+
 .banner-bg {
     background-image: linear-gradient(rgba(117, 48, 124, 0.45),rgba(140, 33, 136, 0.9)), url(../images/salon2.png);
     background-position: center;
@@ -938,6 +1001,16 @@ input {
     /* height: 200px; */
     position: relative;
 
+}
+
+.neon_sparkles-bg {
+    background-image: url(../images/neon-sparkles.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    
 }
 
 .footer-bg-img {
