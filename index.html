@@ -172,7 +172,7 @@
     <div class="d-flex justify-content-center align-items-center text-center flex-column pb-5">
         <h4 class="bruno-font" style="display: inline-block;"> <span><img src="./images/pixel-scissors.png" alt="" class="pixel-icon" data-aos="flip-left"></span> OUR&nbsp;SERVICES</h4>
         
-        <p class="mont-font" style="font-size: 16px;">Each of our services include a trim,<br> shampoo and conditioning treatment, and hair consultation.</p>
+
     </div>
     <div class="container-fluid d-flex justify-content-center align-items-center h-100 flex-lg-row flex-column">
         <!-- <div class="row flex-row g-4">
@@ -183,6 +183,7 @@
             <div class="services-section">
                 <div class="services-title">
                     <h1 class="bruno-font fw-bold pb-3 text-center">Your New 'Do</h1>
+                    <p class="mont-font" style="font-size: 16px;">Each of our services include a trim,<br> shampoo and conditioning treatment, and hair consultation.</p>
                 </div>
 
             </div>
@@ -289,8 +290,11 @@
                 </div><!-- end of wrapper-->
 
                 <!-- Navigation buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                  <!-- Custom Navigation Buttons -->
+    <button class="custom-next"><i class="fas fa-arrow-right"></i></button>
+    <button class="custom-prev"><i class="fas fa-arrow-left"></i></button>
 
             </div> <!--end swiper-->
         </div>
@@ -556,15 +560,42 @@
 </script>
 
 <script>
-    const swiper = new Swiper('.services-carousel', {
-    slidesPerView: 1.5, // Shows part of the next slide
+//     const swiper = new Swiper('.services-carousel', {
+//     slidesPerView: 1.5,
+//     spaceBetween: 20,
+//     loop: true,
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//   });
+
+const swiper = new Swiper('.services-carousel', {
+    slidesPerView: 2.5,
     spaceBetween: 20,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.custom-next',
+        prevEl: '.custom-prev',
     },
-  });
+    breakpoints: {
+        // For mobile screens (adjust as needed)
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        // For tablets
+        768: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+    },
+});
+
   
 </script>
 </body>

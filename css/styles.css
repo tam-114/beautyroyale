@@ -729,12 +729,14 @@ ul {
   }
 
   .services-title {
-    /* width: 60%; */
-    padding-right: 40px;
+    width: 60%;
+    /* padding-right: 40px; */
     /* padding-left: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .services-carousel {
@@ -746,6 +748,11 @@ ul {
   @media screen and (max-width: 991px) {
     .services-title {
         width: 100%;
+        /* padding-right: 0; */
+    }
+
+    .services-section {
+        max-height: 350px;
     }
 
     .services-carousel {
@@ -754,10 +761,63 @@ ul {
     
   }
 
-
   .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+
+  .custom-next, .custom-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FE259B;
+    color: #fff;
+    border: none;
+    /* border-radius: 50%; */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+    .services-section {
+        flex-direction: column; /* Stack title and carousel vertically */
+        align-items: center;
+    }
+
+    .services-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Adds space between title and carousel */
+    }
+
+    .services-carousel {
+        width: 100%;
+        transform: none; /* Remove any offset to avoid overflow */
+    }
+
+    .swiper-slide {
+        width: 90%; /* Adjust slide width to fit better on small screens */
+        margin: 0 auto; /* Center each slide */
+    }
+}
+
+
+  /* .swiper-button-next, .swiper-button-prev {
     height: 100%;
-    /* transform: translateY(-100px); */
   }
 
   .swiper-button-prev {
@@ -766,9 +826,8 @@ ul {
   }
 
   .swiper-button-next::after, .swiper-button-prev::after {
-    /* visibility: hidden; */
     color: #71073c;
-  }
+  } */
 
   .swiper-slide {
     width: auto;
