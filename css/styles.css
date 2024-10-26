@@ -683,6 +683,10 @@ ul {
     text-align: center;
 }
 
+/* .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    width: 300px;
+} */
+
 .card1 {
     box-shadow: inset 0 0 9px #00AAF6, 0 0 10px #00AAF6;
 }
@@ -695,8 +699,88 @@ ul {
     box-shadow: inset 0 0 9px #B026FF, 0 0 10px #B026FF;
 }
 
+.card4 {
+    box-shadow: inset 0 0 9px #39FF14, 0 0 10px #39FF14;
+}
+
+.card5 {
+    box-shadow: inset 0 0 9px #FFD300, 0 0 10px #FFD300;
+}
+
+.card6 {
+    box-shadow: inset 0 0 9px #FF00FF, 0 0 10px #FF00FF;
+}
+
+.card7 {
+    box-shadow: inset 0 0 9px #FF5F1F, 0 0 10px #FF5F1F;
+}
+
+.card8 {
+    box-shadow: inset 0 0 9px #0EF9F9, 0 0 10px #0EF9F9;
+}
+
 .card:hover {
     box-shadow: 3px 5px 5px rgb(158, 158, 158);
+}
+
+.services-section {
+    display: flex;
+    /* overflow-x: hidden; */
+  }
+
+  .services-title {
+    width: 60%; /* Adjust as needed */
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-carousel {
+    width: 100%; /* Adjust as needed */
+    transform: translateX(-10%); /* Pull the carousel slightly off the page */
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 991px) {
+    .services-title {
+        width: 100%;
+    }
+
+    .services-carousel {
+        transform: translateX(0);
+    }
+    
+  }
+
+
+  .swiper-button-next, .swiper-button-prev {
+    height: 100%;
+    transform: translateY(-100px);
+    /* visibility: hidden; */
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    visibility: hidden;
+  }
+
+  .swiper-slide {
+    width: auto;
+    /* max-width: 300px; */
+     flex-shrink: 0;
+}
+
+.service-card {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container {
+    height: 350px;
 }
 
 .banner-bg {
