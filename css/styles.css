@@ -714,10 +714,13 @@ ul {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+
+
 }
 
 .noGamesBg {
     padding: 10px;
+    margin-top: 20px;
 }
 
 .hidden {
