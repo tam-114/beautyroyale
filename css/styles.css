@@ -907,6 +907,10 @@ ul {
     justify-content: center;
 }
 
+.card-img-top {
+    width: 332px;
+}
+
 .swiper-container {
     height: 350px;
 }
