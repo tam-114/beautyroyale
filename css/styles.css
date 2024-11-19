@@ -804,7 +804,8 @@ ul {
   }
 
   .services-carousel {
-    width: 100%; /* Adjust as needed */
+    /*width: 100%;*/
+    width: 50vw;
     transform: translateX(-10%); /* Pull the carousel slightly off the page */
     overflow: hidden;
   }
